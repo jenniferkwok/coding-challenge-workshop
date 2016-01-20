@@ -1,3 +1,68 @@
+/*//variables*/
+/*@greenish: #83EDD9;*/
+
 body {
-	background: yellow;
+	background: #FFFFFF;
+	color: #494949; 
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+}
+a { 
+	color: inherit; 
+}
+a:hover {
+	color: #83EDD9;
+}
+.navbar-nav li a {
+ line-height: 50px;
+ font-size: 20px;
+}
+.navbar-default, .navbar-text, .dropdown, .dropdown-menu{
+	min-height:100px;
+	height: 100px;
+	background-color: #83EDD9;
+	color: #494949;
+}
+.navbar-collapse { 
+	background: #83EDD9; 
+} 
+
+ul.dropdown-menu{
+  background-color: tomato;
+}
+.fp {
+	font-size: 30px;
+}
+
+.nn>a:hover,
+.nn>a:focus {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-top: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-top: 0%;
+    width: 100%;
+  }
+}
+
+
+#logo {
+    -webkit-animation:spin 2s linear infinite;
+    -moz-animation:spin 2s linear infinite;
+    animation:spin 2s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+#logo:hover {
+    -webkit-animation-play-state: paused
+    animation-play-state: paused;
 }
