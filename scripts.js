@@ -4,10 +4,10 @@ $(document).ready(function(){
 var loggedin
 
 if(loggedin) {
-  $("#loginlogout").text("logout");
+  $("#loginlogout").text("LOGOUT");
 }
 else {
-  $("#loginlogout").text("login");
+  $("#loginlogout").text("LOGIN");
 }
 
 })
